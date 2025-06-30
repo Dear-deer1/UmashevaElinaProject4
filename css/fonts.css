@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Mazut';
+    src: url('../fonts/MazutSP-Demo.otf') format('OpenType');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DIN';
+    src: url('../fonts/DINCondensed-Regular.ttf') format('TrueType');
+    font-weight: normal;
+    font-style: normal;
+}
+

@@ -1,0 +1,1518 @@
+html {
+    max-width: 100vw;
+    overflow-x: hidden;
+    position: relative;
+} 
+
+::selection {
+    background-color: #a9a9a9;
+}
+
+body {
+    height: 100%;
+    display: block;
+    font-family: 'Mazut';
+    color: #ffffff;
+    background-color: #000000;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: #FFF;
+}
+
+svg {
+    display: block;
+    width: 100vw;
+    height: 60.03vw;
+    margin-top: -4vw;
+  }
+
+.header-nav{
+    width: 100%;
+    height: 4.63vw;
+    top: 0;
+    position: fixed;
+    background: #000000;
+    z-index: 100;
+}
+
+.nav-items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 3px solid white;
+    background: #000000;
+}
+
+.nav-link {
+    font-size: 2.72vw;
+    color: #B1B1B1;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'DIN';
+    position: relative;
+    transition: color 0.2s;
+}
+
+.nav-link:hover {
+    filter: blur(1px);
+  }
+
+.thispage {
+    color: #ffffff !important; 
+}
+
+.mainpage {
+    width: 100vw;
+    height: auto;
+    position: relative;
+    margin-top: 4.63vw;
+    font-family:'DIN'; 
+    aspect-ratio: 3 / 2;
+}
+
+.maintitle {
+    position: relative;
+    margin-top: 6.23vw;
+    margin-left: 5vw;
+    font-size: 4.36vw;
+    color: #FFF;
+    font-family: 'DIN';
+}
+
+.shopbanner {
+    width: 100vw;
+    height: 64.11vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.thebanner {
+    width: 91.76vw;
+    height: 49.93vw;
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 10vw;
+    left: 3.09vw;
+}
+
+.shoptitle {
+    position: absolute;
+    top: 0;
+    left: 9.67vw;
+    font-family: 'Mazut';
+    font-size: 8.72vw;
+    letter-spacing: 0.61vw;
+}
+
+.bannerpeople {
+    width: 62.06vw;
+    height: 34.13vw;
+    position: absolute;
+    top: 7.58vw;
+    left: 15.53vw;
+    transition: opacity 1.5s;
+}
+
+.bannerpeople:hover {
+    opacity: 0.5;
+}
+
+.bannervector {
+    width: 100%;
+    pointer-events: none;
+}
+
+.bannerbutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    top: 42.58vw;
+    left: 38.48vw;    
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.bannerbutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.bannerbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.products {
+    width: 100vw;
+    height: 108.99vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.voice {
+    width: 44.89vw;
+    height: 40.68vw;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 0;
+    left: 3.09vw;
+}
+
+.voiceimg {
+    width: 28.89vw;
+    height: 28.89vw;
+    position: absolute;
+    top: 5.31vw;
+    left: 8.11vw;
+    z-index: 0;
+    animation: voicespin 2s linear infinite;
+}
+
+.voiceimg:hover {
+    animation: voicespin2 0.5s linear infinite;
+}
+
+.voicetitle {
+    position: absolute;
+    top: 1.09vw;
+    left: 8.52vw;
+    font-family: 'Mazut';
+    font-size: 8.72vw;
+    z-index: 1;
+}
+
+.voicevector {
+    width: 50.45vw;
+    height: 21.45vw;
+    position: absolute;
+    top: 7.77vw;
+    left: -2.38vw;
+    pointer-events: none;
+}
+
+.voicebutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    bottom: 2.52vw;
+    left: 10.63vw;  
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.voicebutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.voicebutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.memory {
+    width: 44.89vw;
+    height: 26.97vw;    
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 0;
+    right: 3.09vw;
+}
+
+.memoryimg {
+    width: 32.7vw;
+    height: 25.88vw;    
+    position: absolute;
+    top:  0;
+    left: 3.68vw;    
+    z-index: 0;
+}
+
+.memoryimg:hover {
+    transform: scale(1.3);
+    transition: transform 2s;
+}
+
+.memorytitle {
+    position: absolute;
+    top: 1.77vw;
+    left: 1.43vw;
+    font-family: 'Mazut';
+    font-size: 6.54vw;
+    z-index: 1;
+}
+
+.memoryvector {
+    width: 47.85vw;
+    height: 29.51vw;
+    position: absolute;
+    top: 0;
+    left: -4.56vw;    
+    pointer-events: none;
+}
+
+.memorybutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    bottom: 1.36vw;
+    left: 1.02vw;    
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.memorybutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.memorybutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.shopbig {
+    width: 44.89vw;
+    height: 10.76vw;
+    position: absolute;
+    top: 29.92vw;
+    left: 51.88vw;
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer; 
+}
+
+.shopbig:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.knowledge {
+    width: 44.89vw;
+    height: 18.52vw;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 47.63vw;
+    left: 3.09vw;
+}
+
+.knowledgeimg {
+    width: 41.89vw;
+    height: 27.93vw;    
+    position: absolute;
+    top: -4.70vw;
+    left: 1.29vw;     
+    z-index: 0;
+    animation: knowledgeanima 1.5s ease-in-out infinite;
+}
+
+.knowledgetitle {
+    position: absolute;
+    top: 1.77vw;
+    left: 1.43vw;
+    font-family: 'Mazut';
+    font-size: 6.54vw;
+    z-index: 1;
+}
+
+.knowledgevector {
+    width: 47.85vw;
+    height: 20.51vw;
+    position: absolute;
+    top: 0;
+    left: -4.56vw;    
+    pointer-events: none;
+}
+
+.knowledgebutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    bottom: 1.36vw;
+    left: 1.02vw;    
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.knowledgebutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.knowledgebutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.past {
+    width: 44.89vw;
+    height: 18.52vw;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 69.56vw;
+    left: 3.09vw;
+}
+
+.pastimg {
+    width: 36.84vw;
+    height: 32.7vw;  
+    position: absolute;
+    top: -8vw;
+    left: 3.2vw;    
+    z-index: 0;
+}
+
+.pastimg:hover {
+    transform: rotate(10deg);
+    transition: transform 2s;
+}
+
+.pasttitle {
+    position: absolute;
+    top: 1.77vw;
+    left: 1.43vw;
+    font-family: 'Mazut';
+    font-size: 6.54vw;
+    z-index: 1;
+}
+
+.pastvector {
+    width: 47.85vw;
+    height: 20.51vw;
+    transform: rotate(15.935deg);
+    position: absolute;
+    top: 0;
+    left: -4.56vw;    
+    pointer-events: none;
+    z-index: -1;
+}
+
+.pastbutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    bottom: 1.36vw;
+    left: 1.02vw;    
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.pastbutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.pastbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.eyediv {
+    width: 44.89vw;
+    height: 40.68vw;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 47.63vw;
+    right: 3.09vw;
+}
+
+.eyeimg {
+    width: 41.76vw;
+    height: 29.49vw;
+    position: absolute;
+    top: 4.5vw;
+    left: 2.52vw;      
+    z-index: 0;
+    animation: eyeanima 4s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+}
+
+.eyetitle {
+    position: absolute;
+    top: 1.63vw;
+    left: 9.94vw;    
+    font-family: 'Mazut';
+    font-size: 8.72vw;
+    z-index: 1;
+}
+
+.eyevector {
+    width: 52.88vw;
+    height: 20.51vw;    
+    position: absolute;
+    top: 8.41vw;
+    left: -6.74vw;    
+    transform: rotate(10.042deg);
+    pointer-events: none;
+    z-index: -1;
+}
+
+.eyebutton {
+    width: 23.63vw;
+    height: 5.38vw;
+    position: absolute;
+    bottom: 1.36vw;
+    left: 1.02vw;    
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.eyebutton span {
+    position: relative;
+    top: -0.6vw; 
+}
+
+.eyebutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.shopbig2 {
+    width: 44.89vw;
+    height: 10.76vw;
+    position: absolute;
+    top: 93.14vw;
+    left: 27.52vw;
+    font-family: 'DIN';
+    font-size: 4.36vw;
+    color: #FFF;
+    background: transparent;
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer; 
+}
+
+.shopbig2:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.section404 {
+    width: 100vw;
+    height: 64.89vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.marquee {
+    display: flex;
+    align-items: center;
+    height: 4.6vw;
+    overflow: hidden;
+    border: 0.25vw solid #FFF;
+    background-color: black;
+    z-index: 1;
+}
+
+.marquee-content {
+    display: flex;
+    align-items: center;
+    height: 4.6vw;
+    animation: marquee 5s linear infinite;
+    width: max-content;
+}
+
+.marquee-txt {
+    width: max-content;
+    font-family: 'DIN';
+    font-size: 2.73vw;
+    color: #B1B1B1;
+}
+
+.block404 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: -2.5vw;
+    background-image: url(../img/404.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 0;
+}    
+
+.title404-1 {
+    position: absolute;
+    top: 0;
+    left: 3.54vw;
+    font-family: 'DIN';
+    font-size: 28.63vw;
+    mix-blend-mode: exclusion;
+    color: #FFF;
+    z-index: 1;
+}
+
+.title404-2 {
+    position: absolute;
+    top: 14.51vw;
+    left: 36.45vw;
+    font-family: 'Mazut';
+    font-size: 28.63vw;
+    mix-blend-mode: exclusion;
+    color: #FFF;
+    z-index: 1;
+}
+
+.title404-3 {
+    position: absolute;
+    top: 14.51vw;
+    left: 34.13vw;    
+    font-family: 'DIN';
+    font-size: 28.63vw;
+    mix-blend-mode: exclusion;
+    color: #FFF;
+    z-index: 1;
+}
+
+.title404-4 {
+    position: absolute;
+    top: 34.40vw;
+    left: 18.53vw;
+    font-family: 'DIN';
+    font-size: 28.63vw;
+    mix-blend-mode: exclusion;
+    color: #FFF;
+    z-index: 2;
+}
+
+.title404-5 {
+    position: absolute;
+    top: 34.40vw;
+    left: 30vw;
+    font-family: 'DIN';
+    font-size: 28.63vw;
+    mix-blend-mode: exclusion;
+    color: #FFF;
+    z-index: 1;
+}
+
+.back404 {
+    width: 0.95vw;
+    height: 1.33vw;
+    position: absolute;
+    top: 4vw;
+    left: 2vw;
+    border: none;
+    background: none;
+    background-image: url(../img/404back.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.back404:hover {
+    transform: scale(2);
+}
+
+.footer-nav {
+    width: 100%;
+    height: 24.86vw;
+    background: #000000;
+    z-index: 10;
+}
+
+.footer-items{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-top: 3px solid white;
+    background: #000000;
+}
+
+.footer-link {
+    font-size: 2.72vw;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-family: 'DIN';
+    position: relative;
+    transition: color 0.2s;
+}
+
+.footer-link:hover {
+    filter: blur(1px);
+}
+
+.feelings {
+    width: 100%;
+    height: 61.63vw;
+    position: relative;
+}
+
+.feelings-cover {
+    width: 42.29vw;
+    height: 45.2vw;    
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 5.79vw;
+    left: 3.27vw;
+}
+
+.feelings-img {
+    width: 42.29vw;
+    height: 45.2vw;  
+}
+
+.feelings-txt1 {
+    position: absolute;
+    top: 0;
+    left: 0.27vw;
+    font-family: 'Mazut';
+    font-size: 13.62vw;
+    color: #FFF;
+    z-index: 2;
+}
+
+.feelings-txt2 {
+    position: absolute;
+    top: 5.59vw;
+    left: 6.13vw;    
+    font-family: 'DIN';
+    font-size: 8vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.feelings-txt3 {
+    position: absolute;
+    top: 11.72vw;
+    left: 4.09vw;      
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.feelings-txt4 {
+    position: absolute;
+    top: 26vw;
+    left: -14.8vw;      
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.feelings-txt5 {
+    position: absolute;
+    top: 20vw;
+    left: 22vw;      
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.feelings-txt6 {
+    position: absolute;
+    bottom: 2vw;
+    right: 0;      
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.feelingstitle {
+    position: absolute;
+    top: 5.79vw;
+    left: 47.34vw;
+    font-size: 4.09vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.feelings-paragraph1 {
+    position: absolute;
+    top: 10.63vw;
+    left: 47.34vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.feelings-paragraph2 {
+    position: absolute;
+    top: 26.16vw;
+    left: 47.34vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.feelingsbutton {
+    width: 21.7vw;
+    height: 4.94vw;    
+    position: absolute;
+    top: 46.45vw;
+    left: 47.34vw;   
+    font-family: 'DIN';
+    font-size: 3vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.feelingsbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.feelingsvector {
+    width: 144.72vw;
+    height: 3.64vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.death {
+    width: 100%;
+    height: 56.95vw;
+    position: relative;
+}
+
+.death-cover {
+    width: 42.29vw;
+    height: 45.2vw; 
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 5.79vw;
+    right: 3.27vw;
+}
+
+.death-img {
+    width: 42.29vw;
+    height: 45.2vw;  
+}
+
+.death-txt1 {
+    position: absolute;
+    top: 0;
+    left: 10.22vw;
+    font-family: 'Mazut';
+    font-size: 13.62vw;
+    color: #FFF;
+    z-index: 2;
+}
+
+.death-txt2 {
+    position: absolute;
+    top: 5.59vw;
+    left: 16.78vw;   
+    font-family: 'DIN';
+    font-size: 8vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.death-txt3 {
+    position: absolute;
+    top: 3vw;
+    left: 15.09vw;
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.death-txt4 {
+    position: absolute;
+    top: 20vw;
+    left: -17vw;    
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.death-txt4 span {
+    color: black;
+}
+
+.death-txt5 {
+    position: absolute;
+    top: 25vw;
+    left: 23vw;   
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.death-txt6 {
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;   
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #000000;
+    z-index: 1;
+}
+
+.deathtitle {
+    position: absolute;
+    top: 5.79vw;
+    left: 3.27vw;
+    font-size: 4.09vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.death-paragraph1 {
+    position: absolute;
+    top: 10.63vw;
+    left: 3.27vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.death-paragraph2 {
+    position: absolute;
+    top: 30vw;
+    left: 3.27vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.deathbutton {
+    width: 21.7vw;
+    height: 4.94vw;    
+    position: absolute;
+    top: 46.45vw;
+    left: 3.27vw;   
+    font-family: 'DIN';
+    font-size: 3vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.deathbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.deathvector {
+    width: 144.72vw;
+    height: 3.64vw;
+    position: absolute;
+    bottom: -2vw;
+    left: 0;
+    transform: rotate(2.132deg);
+}
+
+.remember {
+    width: 100%;
+    height: 61.63vw;
+    position: relative;
+}
+
+.remember-cover {
+    width: 42.29vw;
+    height: 45.2vw;    
+    border: 2px solid #FFF;
+    border-radius: 2.18vw;
+    position: absolute;
+    top: 5.79vw;
+    left: 3.27vw;
+}
+
+.remember-img {
+    width: 42.29vw;
+    height: 45.2vw;  
+}
+
+.remember-txt1 {
+    position: absolute;
+    bottom: 4.77vw;
+    left: 5.04vw;
+    font-family: 'Mazut';
+    font-size: 13.62vw;
+    color: #FFF;
+    z-index: 2;
+}
+
+.remember-txt2 {
+    position: absolute;
+    bottom: 3.41vw;
+    left: 0.95vw;      
+    font-family: 'DIN';
+    font-size: 8vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.remember-txt3 {
+    position: absolute;
+    bottom: 4.6vw;
+    left: 23vw;      
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.remember-txt4 {
+    position: absolute;
+    top: 16vw;
+    left: -14.8vw;     
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+}
+
+.remember-txt4 span {
+    color: black;
+}
+
+.remember-txt5 {
+    position: absolute;
+    top: 22vw;
+    left: 22vw;      
+    transform: rotate(90deg);
+    font-family: 'DIN';
+    font-size: 3.7vw;
+    color: #FFF;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+.remember-txt6 {
+    position: absolute;
+    top: 1vw;
+    right: 1vw;     
+    font-family: 'DIN';
+    font-size: 2.5vw;
+    color: #000000;
+    z-index: 1;
+}
+
+.remember-txt6 span {
+    color: #FFF;
+}
+
+.remembertitle {
+    position: absolute;
+    top: 5.79vw;
+    left: 47.34vw;
+    font-size: 4.09vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.remember-paragraph1 {
+    position: absolute;
+    top: 10.63vw;
+    left: 47.34vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.remember-paragraph2 {
+    position: absolute;
+    top: 26.16vw;
+    left: 47.34vw;
+    width: 41.63vw;
+    font-size: 2.04vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.rememberbutton {
+    width: 21.7vw;
+    height: 4.94vw;    
+    position: absolute;
+    top: 46.45vw;
+    left: 47.34vw;   
+    font-family: 'DIN';
+    font-size: 3vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.rememberbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.remembervector {
+    width: 31.57vw;
+    height: 18.88vw;
+    position: absolute;
+    bottom: 18vw;
+    left: 5vw;
+}
+
+.helpbanner {
+    position: relative;
+    height: 59.06vw;
+    width: 100%;
+}
+
+.helptitle {
+    width: 39.3vw;
+    position: absolute;
+    top: 3.59vw;
+    left: 1.23vw;
+    font-size: 4.36vw;
+    font-family: 'DIN';
+    color: #FFF;
+}
+
+.helpvector1 {
+    width: 82.92vw;
+    height: 41.9vw;    
+    position: absolute;
+    top: 9vw;
+    left: 11.5vw;
+    animation: help1 4s ease-in-out infinite;
+}
+
+.helpvector2 {
+    width: 82.92vw;
+    height: 41.9vw;    
+    position: absolute;
+    top: 9vw;
+    left: 11.7vw;
+    animation: help2 4s ease-in-out infinite;
+}
+
+.helpvector3 {
+    width: 82.92vw;
+    height: 41.9vw;    
+    position: absolute;
+    top: 9vw;
+    left: 11.9vw;
+    animation: help1 4s ease-in-out infinite;
+}
+
+.helpvector4 {
+    width: 82.92vw;
+    height: 41.9vw;    
+    position: absolute;
+    top: 9vw;
+    left: 12.2vw;
+    animation: help2 4s ease-in-out infinite;
+}
+
+.helpvector5 {
+    width: 82.92vw;
+    height: 41.9vw;    
+    position: absolute;
+    top: 9vw;
+    left: 12.4vw;
+    animation: help1 4s ease-in-out infinite;
+}
+
+.helpbutton {
+    width: 23.63vw;
+    height: 5.38vw;     
+    position: absolute;
+    bottom: 3.54vw;
+    left: 1.23vw; 
+    font-family: 'DIN';
+    font-size: 3vw;
+    color: #FFF;
+    background: transparent;
+    border: 0.3vw solid #FFF;
+    border-radius: 2.18vw;
+    padding-bottom: 1vw;
+    cursor: pointer;
+}
+
+.helpbutton:hover {
+    background-color: #a9a9a9;
+    color: #000000;
+    filter: blur(1px);
+}
+
+.helpgallery {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 53vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+  }
+  
+  .helpgallerycontent {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 4.09vw;
+    width: max-content;
+    padding: 0 27.5vw;
+    box-sizing: content-box;
+  }
+
+  
+.card {
+    flex-shrink: 0;
+    width: 44.82vw;
+    height: 49.93vw;
+    border-radius: 1.63vw;
+    border: 3px solid #FFF;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loneliness {
+    background-image: url(../img/lonely.png);
+}
+.anxiety {
+    background-image: url(../img/anxious.png);
+}
+.fear {
+    background-image: url(../img/fear.png);
+}
+
+.card h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Mazut';
+    font-size: 15.43vw;
+    color: white;
+    mix-blend-mode: exclusion;
+    margin: 0;
+    pointer-events: none;
+}
+
+.helpgallery-controls {
+    position: absolute;
+    bottom: -2vw;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    margin-top: 2vw;
+    z-index: 10;
+}
+
+.prev,
+.next {
+    width: 1.77vw;
+    height: 2.38vw;
+    background-image: url(../img/arrow.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    border: none;
+    background-color: transparent;
+    margin-bottom: 1.84vw;
+    cursor: pointer;
+}
+
+.next {
+    transform: rotate(180deg);
+}
+
+.diarysection {
+    margin-top: 3vw;
+    position: relative;
+    height: 60.17vw;
+    width: 100%;
+}
+
+.diarybackground {
+    width: 84.66vw;
+    height: 63.3vw;
+    transform: rotate(-20.025deg);
+    position: absolute;
+    top: -5vw;
+    left: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.diary {
+    width: 85.64vw;
+    height: 37.47vw;   
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+textarea {
+    width: 65.64vw;
+    height: 10vw;   
+    padding: 10vw;
+    position: absolute;
+    top: 10.83vw;
+    left: 6.2vw;    
+    font-size: 2.73vw;
+    font-family: 'DIN';
+    color: white;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    resize: none;
+    outline: none;
+}
+
+textarea::placeholder {
+    color: white;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+textarea:focus::placeholder {
+    opacity: 0;
+}
+
+.appbanner {
+    position: relative;
+    height: 57.9vw;
+    width: 100%;
+    background-image: url(../img/appbackground.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.apptitle1 {
+    position: absolute;
+    top: 5.11vw;
+    left: 3.95vw;    
+    font-family: 'DIN';
+    font-size: 5.86vw;
+    color: #ffffff;
+}
+
+.apptitle2 {
+    width: 20.43vw;
+    position: absolute;
+    top: 5.5vw;
+    right: 3.95vw;    
+    font-family: 'Mazut';
+    font-size: 3.27vw;
+    text-align: right;
+    color: #ffffff;
+}
+
+.apprelease {
+    position: absolute;
+    top: 12vw;
+    left: 3.95vw;    
+    font-family: 'DIN';
+    font-size: 3.27vw;
+    color: #ffffff;
+}
+
+.apptxt {
+    position: absolute;
+    bottom: 2vw;
+    left: 3.95vw;    
+    font-family: 'DIN';
+    font-size: 2.73vw;
+    color: #ffffff;
+}
+
+.appversion {
+    position: absolute;
+    bottom: 2vw;
+    right: 3.95vw;    
+    font-family: 'DIN';
+    font-size: 2.73vw;
+    color: #ffffff;
+}
+
+.line1 {
+    height: 49.5vw;
+    position: absolute;
+    top: 6vw;
+    left: 3vw;    
+}
+
+.line2 {
+    height: 49.5vw;
+    position: absolute;
+    top: 6vw;
+    right: 3vw;    
+}
+
+.appvector {
+    position: absolute;
+    width: 64.57vw;
+    height: 40.44vw;
+    top: 5.72vw;
+    left: 14.37vw;
+    transition: opacity 2s ease-in;
+}
+
+.appvector:hover {
+    opacity: 0.5;
+}
+
+.download {
+    position: relative;
+    height: 59.31vw;
+    width: 100%;  
+}
+
+.download-body {
+    position: absolute;
+    height: 79.17vw;
+    bottom: -2vw;
+    left: 0;
+}
+
+.eye {
+    position: absolute;
+    background: black;
+    border-radius: 50%;
+    animation: blink 5s infinite;
+    mix-blend-mode: linear_dodge;
+}
+
+.leye {
+    width: 6.46vw;
+    height: 14.18vw;    
+    top: 14.9vw;
+    left: 22vw;
+}
+
+.reye {
+    width: 5.35vw;
+    height: 13.29vw;
+    top: 14.24vw;
+    left: 33.66vw;
+}
+
+.downloadtxt {
+    width: 54vw;
+    position: absolute;
+    top: 17vw;
+    left: 41.08vw;
+    font-family: 'DIN';
+    font-size: 2.73vw;
+    color: #ffffff;
+    mix-blend-mode: exclusion;
+}
+
+.downloadbtn {
+    position: absolute;
+    bottom: 14.92vw;
+    left: 41.08vw;    
+    font-family: 'DIN';
+    font-size: 6vw;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.downloadbtn:hover {
+    color: #a9a9a9;
+    filter: blur(1px);
+}
